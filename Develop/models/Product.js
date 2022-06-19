@@ -13,13 +13,10 @@ Product.init(
     },
     product_name: {
       type: DataTypes.STRING,
-      allowNull: false,
-      validate: {
-        notEmpty: ture
-      }
+      allowNull: false
     },
     price: {
-      type: DataTypes.FLOAT,
+      type: DataTypes.DECIMAL(10, 2),
       allowNull: false,
       validate: {
         isDecimal: true
@@ -37,7 +34,8 @@ Product.init(
       type: DataTypes.INTEGER,
       references: {
         model: 'category',
-        key: 'id'
+        key: 'id',
+        unique: false
       }
     },
   },

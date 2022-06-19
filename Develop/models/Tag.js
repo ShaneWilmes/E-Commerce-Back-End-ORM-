@@ -12,10 +12,7 @@ Tag.init(
             autoIncrement: true
         },
         tag_name: {
-            type: DataTypes.INTEGER,
-            validate: {
-                notEmpty: true
-            }
+            type: DataTypes.STRING,            
         }
     },
     {
@@ -23,7 +20,7 @@ Tag.init(
         timestamps: false,
         freezeTableName: true,
         underscored: true,
-        modelName: 'traveller'
+        modelName: 'tag'
     }
 );
 
