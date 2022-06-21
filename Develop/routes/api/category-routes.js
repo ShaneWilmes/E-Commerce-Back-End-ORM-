@@ -50,13 +50,13 @@ router.post('/', (req, res) => {
 router.put('/:id', (req, res) => {
   // update a category by its `id` value
   try {
-    const categoryData = await Category.findByPk(req.params.id, {
-      // JOIN with travellers, using the Trip through table
+    const categoryData = await Category.update(req.params.id, {
+      
       where: { 
         id: req.params.id },
     });
 
-    if (!categoryData) {
+    if (!categoryData[0]) {
       res.status(404).json({ message: 'No category found with this id!' });
       return;
     }
