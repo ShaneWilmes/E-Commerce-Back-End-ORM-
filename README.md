@@ -23,7 +23,7 @@ shanewilmes@yahoo.com
 Clone the repo, navigate to the folder and run installation commands.
 
 ## Installation Commands
-npm i, login to mysql, source schema.sql;, use ecommerce_db;, quit and then npm run seed.
+npm i, login to mysql, source schema.sql;, use ecommerce_db;, quit mysql and then npm run seed.
 
 ## Tests
 Not required for the use of this app.
@@ -35,6 +35,5 @@ Make a pull request with comments or questions.
 [Demo]()
 
 ## License
-
 ![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)
     
